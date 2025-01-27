@@ -1,0 +1,14 @@
+{
+  "name": "@libs/ddd",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf .turbo dist",
+    "clean-modules": "rimraf node_modules",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit --pretty"
+  }
+}
