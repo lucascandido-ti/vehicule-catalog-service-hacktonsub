@@ -478,3 +478,5 @@ $RECYCLE.BIN/
 
 .pnpm-store
 **/pkg
+
+.sonarcloud-attr

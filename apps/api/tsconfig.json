@@ -1,0 +1,19 @@
+{
+  "extends":["../../tsconfig.json"],
+  "compilerOptions": {
+    "target": "ES2021",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "exactOptionalPropertyTypes": false,
+    "strictPropertyInitialization": false,
+    "baseUrl": "../..",
+    "paths": {
+      "@vcs/api": ["./apps/api/src"],
+      "@vcs/api/*": ["./apps/api/src/*"],
+      "@vcs/core": ["./packages/core/src"],
+      "@vcs/core/*": ["./packages/core/src/*"],
+      "@libs/ddd": ["./libs/ddd/src"],
+      "@libs/ddd/*": ["./libs/ddd/src/*"]
+    }
+  }
+}
