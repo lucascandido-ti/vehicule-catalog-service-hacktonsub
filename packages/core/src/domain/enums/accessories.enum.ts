@@ -1,0 +1,33 @@
+export enum Accessories {
+  AirConditioning = "AirConditioning",
+  Sunroof = "Sunroof",
+  GPS = "GPS",
+  LeatherSeats = "LeatherSeats",
+  Bluetooth = "Bluetooth",
+  BackupCamera = "BackupCamera",
+  HeatedSeats = "HeatedSeats",
+  ParkingSensors = "ParkingSensors",
+  CruiseControl = "CruiseControl",
+  AlloyWheels = "AlloyWheels",
+  RoofRack = "RoofRack",
+  FogLights = "FogLights",
+  KeylessEntry = "KeylessEntry",
+  PremiumSoundSystem = "PremiumSoundSystem",
+}
+
+export const accessoriesDict = {
+  [Accessories.AirConditioning]: "Ar condicionado",
+  [Accessories.Sunroof]: "Teto Solar",
+  [Accessories.GPS]: "GPS",
+  [Accessories.LeatherSeats]: "Assentos de couro",
+  [Accessories.Bluetooth]: "Bluetooth",
+  [Accessories.BackupCamera]: "Câmera de Ré",
+  [Accessories.HeatedSeats]: "Assentos aquecidos",
+  [Accessories.ParkingSensors]: "Sensores de estacionamento",
+  [Accessories.CruiseControl]: "Controle de cruzeiro",
+  [Accessories.AlloyWheels]: "Rodas de liga leve",
+  [Accessories.RoofRack]: "Rack de telhado",
+  [Accessories.FogLights]: "Faróis de neblina",
+  [Accessories.KeylessEntry]: "Entrada sem chave",
+  [Accessories.PremiumSoundSystem]: "Sistema de Som Premium",
+};
