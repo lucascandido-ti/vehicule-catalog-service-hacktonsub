@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "core": "pnpm --filter @vcs/core",
     "ddd": "pnpm --filter @libs/ddd",
     "build": "turbo run build",
     "clean": "turbo run clean --parallel",
