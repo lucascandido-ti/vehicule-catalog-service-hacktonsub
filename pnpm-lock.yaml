@@ -53,6 +53,12 @@ importers:
 
   libs/ddd: {}
 
+  packages/core:
+    dependencies:
+      '@libs/ddd':
+        specifier: workspace:*
+        version: link:../../libs/ddd
+
 packages:
 
   '@ampproject/remapping@2.3.0':

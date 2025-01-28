@@ -1,0 +1,12 @@
+{
+  "extends": ["../../tsconfig.json"],
+  "compilerOptions": {
+    "baseUrl": "../..",
+    "paths": {
+      "@vcs/core": ["packages/core/src"],
+      "@vcs/core/*": ["packages/core/src/*"],
+      "@libs/ddd": ["libs/ddd/src"],
+      "@libs/ddd/*": ["libs/ddd/src/*"]
+    },
+  }
+}
