@@ -10,6 +10,8 @@
     "paths": {
       "@vcs/api": ["./apps/api/src"],
       "@vcs/api/*": ["./apps/api/src/*"],
+      "@vcs/adapter": ["./packages/adapter/src"],
+      "@vcs/adapter/*": ["./packages/adapter/src/*"],
       "@vcs/core": ["./packages/core/src"],
       "@vcs/core/*": ["./packages/core/src/*"],
       "@libs/ddd": ["./libs/ddd/src"],

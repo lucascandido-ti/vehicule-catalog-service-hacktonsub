@@ -2,7 +2,11 @@ import { APP_FILTER, APP_INTERCEPTOR, APP_PIPE, BaseExceptionFilter } from "@nes
 import { ClassSerializerInterceptor, Module, ValidationPipe } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 
+import { datasource } from "@vcs/adapter/data";
+
 import { readConfig } from "./config";
+
+import { NestjsTypeormModule } from "./utils";
 
 @Module({
   imports: [
@@ -11,6 +15,7 @@ import { readConfig } from "./config";
       ignoreEnvVars: true,
       load: [() => readConfig("./settings.json")],
     }),
+    NestjsTypeormModule.forRoot(datasource),
   ],
   providers: [
     { provide: APP_FILTER, useClass: BaseExceptionFilter },

@@ -3,6 +3,8 @@ import path from "node:path";
 
 import z from "zod";
 
+import { DataModuleConfig } from "@vcs/adapter/data";
+
 import { ApiConfig } from "./api.config";
 
 export * from "./api.config";
@@ -11,6 +13,7 @@ export const Config = z.object({
   port: z.coerce.number().default(3333),
   globalPrefix: z.string().nullable().default("api"),
   api: ApiConfig,
+  data: DataModuleConfig,
 });
 
 export type Config = z.infer<typeof Config>;
