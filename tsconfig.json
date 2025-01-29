@@ -34,6 +34,8 @@
       "@vcs/api/*": ["./apps/api/src/*"],
       "@vcs/core": ["./packages/core/src"],
       "@vcs/core/*": ["./packages/core/src/*"],
+      "@vcs/adapter": ["./packages/adapter/src"],
+      "@vcs/adapter/*": ["./packages/adapter/src/*"],
       "@libs/ddd":["./libs/ddd/src"],
       "@libs/ddd/*":["./libs/ddd/src/*"],
     },                                         /* Specify a set of entries that re-map imports to additional lookup locations. */
