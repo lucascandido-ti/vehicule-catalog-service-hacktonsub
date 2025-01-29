@@ -1,0 +1,11 @@
+services:
+  postgres:
+    container_name: vcs-postgres
+    build: .docker/postgres
+    environment:
+      POSTGRES_DB: vcsdatabase
+      POSTGRES_USERNAME: _user_aplic
+      POSTGRES_PASSWORD: root
+    ports:
+      - 5432:5432
+    profiles: [dev]

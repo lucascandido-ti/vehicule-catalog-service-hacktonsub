@@ -1,0 +1,24 @@
+{
+  "port": 3333,
+  "globalPrefix": "api",
+  "api": {
+    "cache": {
+      "max": 10,
+      "ttl": 5000
+    },
+    "throttler": {
+      "limit": 1000,
+      "ttl": 60
+    }
+  },
+  "data": {
+    "default": {
+      "type": "postgres",
+      "host": "localhost",
+      "database": "vcsdatabase",
+      "username": "_user_aplic",
+      "password": "root",
+      "logging": true
+    }
+  }
+}
