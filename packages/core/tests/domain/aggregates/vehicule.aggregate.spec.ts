@@ -7,11 +7,13 @@ import {
   Vehicule,
   VehiculeBrand,
   VehiculeModel,
+  VehiculeModelVersion,
 } from "@vcs/core/domain";
 
 describe("Vehicule", () => {
   let mockBrand: VehiculeBrand;
   let mockModel: VehiculeModel;
+  let mockModelVersion: VehiculeModelVersion;
 
   beforeAll(() => {
     mockBrand = new VehiculeBrand("Honda", "Marca Honda", "Japão");
@@ -22,12 +24,14 @@ describe("Vehicule", () => {
       [Accessories.AirConditioning, Accessories.GPS],
       mockBrand,
     );
+    mockModelVersion = new VehiculeModelVersion("1.4 LX 8V GASOLINA 4P MANUAL", mockModel);
   });
 
   it("should be able create a valid VehiculeBrand", () => {
     const vehicule = Vehicule.create(
       mockBrand,
       mockModel,
+      mockModelVersion,
       "Carro novo",
       new Price(19000),
       Status.AVAILABLE,
@@ -45,6 +49,7 @@ describe("Vehicule", () => {
     const vehicule = Vehicule.create(
       mockBrand,
       mockModel,
+      mockModelVersion,
       "Carro novo",
       new Price(19000),
       Status.AVAILABLE,
