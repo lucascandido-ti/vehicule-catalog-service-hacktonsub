@@ -8,6 +8,8 @@ import { readConfig } from "./config";
 
 import { NestjsTypeormModule } from "./utils";
 
+import { HealthModule } from "./modules";
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -16,6 +18,7 @@ import { NestjsTypeormModule } from "./utils";
       load: [() => readConfig("./settings.json")],
     }),
     NestjsTypeormModule.forRoot(datasource),
+    HealthModule,
   ],
   providers: [
     { provide: APP_FILTER, useClass: BaseExceptionFilter },

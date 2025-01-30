@@ -16,6 +16,8 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
   const config = (configService as unknown as { internalConfig: Config }).internalConfig;
 
+  app.setGlobalPrefix(config.globalPrefix!);
+
   app.set("trust proxy", "1");
   app.enableCors({ credentials: true });
   app.enableShutdownHooks();
